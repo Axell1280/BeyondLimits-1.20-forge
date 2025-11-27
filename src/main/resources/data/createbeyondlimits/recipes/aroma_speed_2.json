@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RAR",
+    "RRR"
+  ],
+  "key": {
+    "R": { "item": "minecraft:redstone" },
+    "A": { "item": "createbeyondlimits:aroma_speed_1" }
+  },
+  "result": {
+    "item": "createbeyondlimits:aroma_speed_2",
+    "count": 1
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "createbeyondlimits:carbon_family"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:diamond",
+      "chance": 95,
+      "count": 1
+    },
+    {
+      "item": "createbeyondlimits:pressure_core",
+      "chance": 5,
+      "count": 1
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:coal"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        },
+        {
+          "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createbeyondlimits:pressure_core"
+        }
+      ],
+      "results": [
+        {
+          "item": "createbeyondlimits:pressure_core",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createbeyondlimits:pressure_core"
+  }
+}

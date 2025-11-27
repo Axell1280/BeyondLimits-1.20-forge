@@ -1,0 +1,4 @@
+// 1.20.1	2025-11-27T16:45:27.1351933	Tags for minecraft:block mod id createbeyondlimits
+05bfb627d50f67fbdf0b3305bf7e7db93669333b data/minecraft/tags/blocks/mineable/pickaxe.json
+1a2b6089a68897a67d95f3e3886e44ed2258ea5e data/minecraft/tags/blocks/needs_diamond_tool.json
+f71b587ec733526537ec413f5c5f0e5d751c0ce8 data/minecraft/tags/blocks/needs_iron_tool.json

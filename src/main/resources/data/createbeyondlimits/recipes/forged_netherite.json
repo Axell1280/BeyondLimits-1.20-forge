@@ -1,0 +1,47 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:diamond"
+  },
+  "transitionalItem": {
+    "item": "createbeyondlimits:incomplete_forged_netherite"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" },
+        { "item": "create:powdered_obsidian" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" },
+        { "item": "minecraft:gold_ingot" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ],
+      "results": [
+        { "item": "createbeyondlimits:incomplete_forged_netherite" }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherite_ingot",
+      "chance": 1.0
+    }
+  ],
+  "loops": 1
+}

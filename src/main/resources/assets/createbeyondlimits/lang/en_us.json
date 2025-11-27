@@ -1,0 +1,33 @@
+{
+  "Icon": "MOD",
+  "item.createbeyondlimits.beyond_limits": "Beyond Limits (DEBUG)",
+
+  "Tab": "MOD",
+  "creativetab.beyond_limits_tab": "Beyond Limits",
+
+  "Items": "MOD",
+  "item.createbeyondlimits.nether_star_fragment": "Nether Star Fragment",
+  "item.createbeyondlimits.unstable_quartz": "Unstable Quartz",
+  "item.createbeyondlimits.drained_nether_star_fragment": "Drained Nether Star Fragment",
+  "item.createbeyondlimits.signal_massage_music_disc": "SOS Signal",
+  "item.createbeyondlimits.signal_massage_music_disc.desc": "Green Intruders 1840/01/21",
+  "item.createbeyondlimits.incomplete_forged_netherite": "Incomplete Forged Netherite",
+  "item.createbeyondlimits.pressure_core": "Pressurized Core",
+  "item.createbeyondlimits.incomplete_copper_piece": "Incomplete Copper Ingot",
+  "item.createbeyondlimits.fabricated_elytra_piece": "Fabricated Elytra Wing",
+  "item.createbeyondlimits.wing": "Wing",
+
+  "block.createbeyondlimits.aroma_speed_1": "Gustweave Aroma",
+  "block.createbeyondlimits.aroma_speed_2": "Galeheart Aroma",
+
+  "block.createbeyondlimits.aroma_regen_1": "Bloomrest Aroma",
+  "block.createbeyondlimits.aroma_regen_2": "Vernal Lifeburst Aroma",
+
+  "block.createbeyondlimits.aroma_strength_1": "Ironpulse Aroma",
+  "block.createbeyondlimits.aroma_strength_2": "Titanblood Aroma",
+
+  "Death.Message": "MOD",
+  "death.attack.pressure_core": "%1$s got crisped by the heat of a Core",
+  "death.attack.pressure_core.player": "%1$s got crisped by the heat of a Core While fighting %2$s"
+
+}

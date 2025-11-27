@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createbeyondlimits:aroma_speed_1",
+      "count": 1
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 8
+    }
+  ],
+  "results": [
+    {
+      "item": "createbeyondlimits:aroma_speed_2"
+    }
+  ]
+}
