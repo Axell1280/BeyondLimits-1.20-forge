@@ -16,7 +16,11 @@
   "item.createbeyondlimits.incomplete_copper_piece": "Incomplete Copper Ingot",
   "item.createbeyondlimits.fabricated_elytra_piece": "Fabricated Elytra Wing",
   "item.createbeyondlimits.wing": "Wing",
+  "item.createbeyondlimits.totem_regen": "Totem Of REGENERATION",
+  "item.createbeyondlimits.totem_strength": "Totem Of STRENGTH",
+  "item.createbeyondlimits.totem_speed": "Totem Of SPEED",
 
+"Blocks": "MOD",
   "block.createbeyondlimits.aroma_speed_1": "Gustweave Aroma",
   "block.createbeyondlimits.aroma_speed_2": "Galeheart Aroma",
 

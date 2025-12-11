@@ -30,6 +30,9 @@ public class ModCreativeModeTabs {
                        output.accept(ModBlocks.AROMA_REGEN_2.get().asItem());
                        output.accept(ModBlocks.AROMA_STRENGTH_1.get().asItem());
                        output.accept(ModBlocks.AROMA_STRENGTH_2.get().asItem());
+                       output.accept(Moditems.TOTEM_REGEN.get().asItem());
+                       output.accept(Moditems.TOTEM_STRENGTH.get().asItem());
+                       output.accept(Moditems.TOTEM_SPEED.get().asItem());
                     })
                     .build());
 

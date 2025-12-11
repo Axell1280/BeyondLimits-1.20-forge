@@ -77,11 +77,6 @@ public class AromaTickHandler {
                                 EFFECT_DURATION, amplifier, true, false, true));
                     }
                 }
-
-                // Debug one message per aroma block when it affects players
-                players.get(0).sendSystemMessage(Component.literal(
-                        "AromaBlock " + ForgeRegistries.BLOCKS.getKey(block) + " applied effect to " + players.size() + " player(s)"
-                ));
             }
         }
     }

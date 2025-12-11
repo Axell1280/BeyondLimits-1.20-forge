@@ -2,9 +2,7 @@ package net.axell.createbeyondlimits.item;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.axell.createbeyondlimits.block.ModBlocks;
-import net.axell.createbeyondlimits.item.custom.NetherStarFragmentItem;
-import net.axell.createbeyondlimits.item.custom.PressureCoreItem;
-import net.axell.createbeyondlimits.item.custom.WingItem;
+import net.axell.createbeyondlimits.item.custom.*;
 import net.axell.createbeyondlimits.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -70,6 +68,26 @@ public class Moditems {
                     .stacksTo(64)
                     .rarity(Rarity.COMMON)
             ));
+
+    public static final RegistryObject<Item> TOTEM_REGEN = ITEMS.register("totem_regen",
+            () -> new RegenTotemItem(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+                    .fireResistant()
+            ));
+    public static final RegistryObject<Item> TOTEM_STRENGTH = ITEMS.register("totem_strength",
+            () -> new StrengthTotemItem(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+                    .fireResistant()
+            ));
+    public static final RegistryObject<Item> TOTEM_SPEED = ITEMS.register("totem_speed",
+            () -> new SpeedTotemItem(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+                    .fireResistant()
+            ));
+
     // --- Block Items for Aroma Blocks ---
     public static final RegistryObject<Item> AROMA_SPEED_1_ITEM = ITEMS.register("aroma_speed_1",
             () -> new BlockItem(ModBlocks.AROMA_SPEED_1.get(),

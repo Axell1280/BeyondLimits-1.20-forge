@@ -56,10 +56,6 @@ public class AromaEffectHandler {
             if (effect != null) {
                 player.addEffect(effect);
 
-                // Debug message – once per tick maximum
-                player.sendSystemMessage(Component.literal(
-                        "Aroma effect detected near: " + block.toString()
-                ));
                 return; // stop scanning once one aroma block is found
             }
         }

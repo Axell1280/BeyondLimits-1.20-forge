@@ -17,21 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(Moditems.AROMA_REGEN_1_ITEM);
-        simpleItem(Moditems.AROMA_REGEN_2_ITEM);
-        simpleItem(Moditems.AROMA_SPEED_1_ITEM);
-        simpleItem(Moditems.AROMA_SPEED_2_ITEM);
-        simpleItem(Moditems.AROMA_STRENGTH_1_ITEM);
-        simpleItem(Moditems.AROMA_STRENGTH_2_ITEM);
-        simpleItem(Moditems.NETHER_STAR_FRAGMENT);
-        simpleItem(Moditems.INCOMPLETE_COPPER_PIECE);
-        simpleItem(Moditems.INCOMPLETE_FORGED_NETHERITE);
-        simpleItem(Moditems.DRAINED_NETHER_STAR_FRAGMENT);
-        simpleItem(Moditems.UNSTABLE_QUARTZ);
-        simpleItem(Moditems.SIGNAL_MASSAGE_MUSIC_DISC);
-        simpleItem(Moditems.PRESSURE_CORE);
-        simpleItem(Moditems.FABRICATED_ELYTRA_PIECE);
-        simpleItem(Moditems.WING);
+        simpleItem(Moditems.TOTEM_REGEN);
+        simpleItem(Moditems.TOTEM_SPEED);
+        simpleItem(Moditems.TOTEM_STRENGTH);
 
     }
 

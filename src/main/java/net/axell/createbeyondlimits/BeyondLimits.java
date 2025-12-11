@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.axell.createbeyondlimits.block.ModBlocks;
 import net.axell.createbeyondlimits.item.ModCreativeModeTabs;
 import net.axell.createbeyondlimits.item.Moditems;
+import net.axell.createbeyondlimits.networking.ModNetworking;
 import net.axell.createbeyondlimits.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,8 @@ public class BeyondLimits {
 
     public BeyondLimits(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModNetworking.register();
 
         ModCreativeModeTabs.register(modEventBus);
 
