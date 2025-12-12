@@ -1,13 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " N ",
+    "CNC",
     "NSN",
-    " N "
+    "COC"
   ],
   "key": {
     "N": { "item": "createbeyondlimits:nether_star_fragment" },
-    "S": { "item": "minecraft:blaze_powder" }
+    "S": { "item": "minecraft:blaze_powder" },
+    "O": { "item": "minecraft:obsidian" },
+    "C": { "item": "minecraft:smooth_stone" }
   },
   "result": {
     "item": "createbeyondlimits:aroma_strength_1",
