@@ -22,5 +22,13 @@
          "stream": false
        }
      ]
-   }
+   },
+  "aroma_aura": {
+    "sounds": [
+      {
+        "name": "createbeyondlimits:aroma_aura",
+        "stream": false
+      }
+    ]
+  }
 }

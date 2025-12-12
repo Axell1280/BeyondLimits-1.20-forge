@@ -79,7 +79,7 @@ public class ModBlocks {
                     Block.Properties.of()
                             .requiresCorrectToolForDrops()
                             .strength(1.5f)
-                            .mapColor(MapColor.COLOR_PURPLE)
+                            .mapColor(MapColor.COLOR_GRAY)
                             .noOcclusion()
                             .lightLevel(state -> 6)
                             .sound(ModSoundTypes.AROMA),
@@ -93,7 +93,7 @@ public class ModBlocks {
                     Block.Properties.of()
                             .requiresCorrectToolForDrops()
                             .strength(1.5f)
-                            .mapColor(MapColor.COLOR_PURPLE)
+                            .mapColor(MapColor.COLOR_LIGHT_GRAY)
                             .noOcclusion()
                             .lightLevel(state -> 12)
                             .sound(ModSoundTypes.AROMA),

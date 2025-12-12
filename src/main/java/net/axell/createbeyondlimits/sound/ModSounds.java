@@ -24,6 +24,9 @@ public class ModSounds {
     //Aroma block stepping
     public static final RegistryObject<SoundEvent> AROMA_STEP =
             registerSoundEvent("aroma_step");
+    public static final RegistryObject<SoundEvent> AROMA_AURA =
+            registerSoundEvent("aroma_aura");
+
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name,
