@@ -8,6 +8,7 @@ version = "${mod_version}"
 displayName = "${mod_name}"
 description = '''${mod_description}'''
 authors = "${mod_authors}"
+logoFile = "BL-icon.png"
 
 [[dependencies.${mod_id}]]
 modId = "forge"
@@ -23,4 +24,9 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-
+[[dependencies.${mod_id}]]
+modId = "create"
+mandatory = true
+versionRange = "[0.6.0,0.6.9)"
+ordering = "NONE"
+side = "BOTH"
