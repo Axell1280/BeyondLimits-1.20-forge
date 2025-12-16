@@ -136,9 +136,6 @@ Please report issues if found.
 - Report bugs or suggestions via GitHub Issues
 - Feedback is welcome, especially regarding recipes and automation
 
-Repository:
-https://github.com/Axell1280/BeyondLimits-1.20-forge
-
 ---
 
 ## License
