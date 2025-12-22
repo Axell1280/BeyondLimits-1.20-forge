@@ -33,6 +33,9 @@ public class ModCreativeModeTabs {
                        output.accept(Moditems.TOTEM_REGEN.get().asItem());
                        output.accept(Moditems.TOTEM_STRENGTH.get().asItem());
                        output.accept(Moditems.TOTEM_SPEED.get().asItem());
+                       output.accept(Moditems.PHOSPHATE_POWDER.get().asItem());
+                       output.accept(Moditems.PHOSPHATE_ORE_ITEM.get().asItem());
+                       output.accept(Moditems.SUPERPHOSPHATE.get().asItem());
                     })
                     .build());
 

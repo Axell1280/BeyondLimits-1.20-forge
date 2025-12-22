@@ -2,12 +2,15 @@ package net.axell.createbeyondlimits.item;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.axell.createbeyondlimits.block.ModBlocks;
-import net.axell.createbeyondlimits.item.custom.*;
+import net.axell.createbeyondlimits.item.custom.NetherStarFragmentItem;
+import net.axell.createbeyondlimits.item.custom.PressureCoreItem;
+import net.axell.createbeyondlimits.item.custom.WingItem;
+import net.axell.createbeyondlimits.item.custom.RegenTotemItem;
+import net.axell.createbeyondlimits.item.custom.StrengthTotemItem;
+import net.axell.createbeyondlimits.item.custom.SpeedTotemItem;
+import net.axell.createbeyondlimits.item.custom.SuperphosphateItem;
 import net.axell.createbeyondlimits.sound.ModSounds;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -88,7 +91,7 @@ public class Moditems {
                     .fireResistant()
             ));
 
-    // --- Block Items for Aroma Blocks ---
+    // --- Block Items ---
     public static final RegistryObject<Item> AROMA_SPEED_1_ITEM = ITEMS.register("aroma_speed_1",
             () -> new BlockItem(ModBlocks.AROMA_SPEED_1.get(),
                     new Item.Properties()));
@@ -112,6 +115,20 @@ public class Moditems {
     public static final RegistryObject<Item> AROMA_STRENGTH_2_ITEM = ITEMS.register("aroma_strength_2",
             () -> new BlockItem(ModBlocks.AROMA_STRENGTH_2.get(),
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> PHOSPHATE_ORE_ITEM = ITEMS.register("phosphate_ore",
+            () -> new BlockItem(ModBlocks.PHOSPHATE_ORE.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> PHOSPHATE_POWDER = ITEMS.register("phosphate_powder",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)
+            ));
+
+    public static final RegistryObject<Item> SUPERPHOSPHATE = ITEMS.register("superphosphate",
+            () -> new SuperphosphateItem(new Item.Properties()
+                    .stacksTo(64)
+            ));
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

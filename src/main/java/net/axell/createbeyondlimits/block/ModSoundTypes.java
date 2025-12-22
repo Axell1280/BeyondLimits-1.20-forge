@@ -9,7 +9,7 @@ public class ModSoundTypes {
             1.0f,
             1.0f,
             SoundEvents.STONE_BREAK,
-            SoundEvents.STONE_STEP,
+            ModSounds.AROMA_STEP.get(),
             SoundEvents.STONE_PLACE,
             SoundEvents.STONE_HIT,
             SoundEvents.STONE_FALL

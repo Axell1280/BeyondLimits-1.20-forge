@@ -1,6 +1,7 @@
 package net.axell.createbeyondlimits.datagen.loot;
 
 import net.axell.createbeyondlimits.block.ModBlocks;
+import net.axell.createbeyondlimits.item.Moditems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.AROMA_SPEED_2.get());
         this.dropSelf(ModBlocks.AROMA_STRENGTH_1.get());
         this.dropSelf(ModBlocks.AROMA_STRENGTH_2.get());
+        this.dropOther(ModBlocks.PHOSPHATE_ORE.get(), Moditems.PHOSPHATE_POWDER.get());
     }
 
     @Override

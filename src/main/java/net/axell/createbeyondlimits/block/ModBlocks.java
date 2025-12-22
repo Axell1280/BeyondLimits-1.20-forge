@@ -2,11 +2,9 @@ package net.axell.createbeyondlimits.block;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.axell.createbeyondlimits.block.custom.AromaBlock;
-import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -100,6 +98,14 @@ public class ModBlocks {
                     MobEffects.DAMAGE_BOOST,
                     1,
                     30
+            ));
+
+    public static final RegistryObject<Block> PHOSPHATE_ORE = BLOCKS.register("phosphate_ore",
+            () -> new Block(Block.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0f, 3.0f)
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .sound(SoundType.STONE)
             ));
 
     public static void register(IEventBus modEventBus) {

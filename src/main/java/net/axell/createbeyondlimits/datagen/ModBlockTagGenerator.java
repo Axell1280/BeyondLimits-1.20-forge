@@ -27,8 +27,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.AROMA_SPEED_1.get(),
                         ModBlocks.AROMA_SPEED_2.get(),
                         ModBlocks.AROMA_STRENGTH_1.get(),
-                        ModBlocks.AROMA_STRENGTH_2.get()
+                        ModBlocks.AROMA_STRENGTH_2.get(),
+                        ModBlocks.PHOSPHATE_ORE.get()
                 );
+
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.PHOSPHATE_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AROMA_REGEN_1.get());
@@ -47,6 +51,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.AROMA_STRENGTH_2.get());
-
     }
 }
