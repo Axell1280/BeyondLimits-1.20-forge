@@ -81,8 +81,9 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 - Wing
 - Incomplete Forged Netherite
 - Incomplete Copper Ingot
-- SOS Signal (lore item)
 - Sub Totems (Speed, Regeneration, Strength)
+- Phosphate Powder
+- SuperPhosphate (Fertilizer)
 
 ### Blocks
 - Gustweave Aroma (Speed – Tier 1)
@@ -91,6 +92,7 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 - Vernal Lifeburst Aroma (Regeneration – Tier 2)
 - Ironpulse Aroma (Strength – Tier 1)
 - Titanblood Aroma (Strength – Tier 2)
+- Phosphate Ore
 
 ---
 
