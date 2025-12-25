@@ -39,9 +39,6 @@ public class Moditems {
     public static final RegistryObject<Item> BEYOND_LIMITS = ITEMS.register("beyond_limits",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> SIGNAL_MASSAGE_MUSIC_DISC = ITEMS.register("signal_massage_music_disc",
-            () -> new RecordItem(6, ModSounds.SIGNAL_MASSAGE, new Item.Properties().stacksTo(1),1340));
-
     public static final RegistryObject<Item> INCOMPLETE_FORGED_NETHERITE = ITEMS.register("incomplete_forged_netherite",
             () -> new Item(new Item.Properties()
                     .fireResistant()

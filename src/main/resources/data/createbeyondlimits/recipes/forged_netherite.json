@@ -40,7 +40,11 @@
   "results": [
     {
       "item": "minecraft:netherite_ingot",
-      "chance": 1.0
+      "chance": 50
+    },
+    {
+      "item": "minecraft:netherite_scrap",
+      "chance": 50
     }
   ],
   "loops": 1

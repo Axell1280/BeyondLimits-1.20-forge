@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/aroma_blocks/aroma_regen",
+  "display": {
+    "icon": { "item": "createbeyondlimits:aroma_speed_1" },
+    "title": { "text": "Velocity" },
+    "description": { "text": "Obtain an Aroma Speed block" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "aroma_speed_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:aroma_speed_1", "createbeyondlimits:aroma_speed_2"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["aroma_speed_1"]]
+}

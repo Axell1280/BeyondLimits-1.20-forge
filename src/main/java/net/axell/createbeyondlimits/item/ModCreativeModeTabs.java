@@ -19,7 +19,6 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.beyond_limits_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                        output.accept(Moditems.NETHER_STAR_FRAGMENT.get());
-                       output.accept(Moditems.SIGNAL_MASSAGE_MUSIC_DISC.get());
                        output.accept(Moditems.DRAINED_NETHER_STAR_FRAGMENT.get());
                        output.accept(Moditems.PRESSURE_CORE.get());
                        output.accept(Moditems.FABRICATED_ELYTRA_PIECE.get());

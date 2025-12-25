@@ -48,7 +48,7 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 
 ## Version Information
 
-- **Current Version:** 0.1.0 (Test Build)
+- **Current Version:** 0.2.5 - beta
 - **Minecraft:** 1.20.1
 - **Mod Loader:** Forge
 - **Required Dependency:** Create **6.0.1 – 6.0.8**
@@ -66,6 +66,8 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
   - Regeneration
   - Strength
 - New items used as crafting components and progression materials
+- New Advancements
+- & Quility of Life improvements + Balance tweaks
 - & more "No spoilers"
 
 ---
@@ -81,8 +83,10 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 - Wing
 - Incomplete Forged Netherite
 - Incomplete Copper Ingot
-- SOS Signal (lore item)
+- ~~SOS Signal (lore item)~~ -> Removed
 - Sub Totems (Speed, Regeneration, Strength)
+- Phosphate Powder
+- Superphosphate
 
 ### Blocks
 - Gustweave Aroma (Speed – Tier 1)
@@ -91,7 +95,7 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 - Vernal Lifeburst Aroma (Regeneration – Tier 2)
 - Ironpulse Aroma (Strength – Tier 1)
 - Titanblood Aroma (Strength – Tier 2)
-
+- Phosphate Ore
 ---
 
 ## Installation
@@ -107,7 +111,7 @@ Recipes are designed to integrate smoothly with Create’s automation systems, w
 
 This mod is under active development.
 
-- Current builds are **test builds**
+- Current builds are **test builds** -> **Soon will be a stable release version**
 - Content, balance, and recipes may change
 - Not recommended for permanent worlds without backups
 

@@ -1,0 +1,25 @@
+{
+  "parent": "createbeyondlimits:beyond_limits/aroma_blocks/aroma_speed",
+  "display": {
+    "icon": { "item": "createbeyondlimits:aroma_strength_1" },
+    "title": { "text": "Power" },
+    "description": { "text": "Obtain an Aroma Strength block" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "aroma_strength_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["createbeyondlimits:aroma_strength_1", "createbeyondlimits:aroma_strength_2"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["aroma_strength_1"]]
+}

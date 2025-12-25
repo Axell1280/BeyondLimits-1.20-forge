@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smoking",
+  "processingTime": 100,
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:coal",
+      "count": 1
+    }
+  ]
+}
