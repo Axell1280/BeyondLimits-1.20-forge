@@ -35,6 +35,9 @@
   "item.createbeyondlimits.opaline_veil_petal": "Opaline Veil Petal",
   "item.createbeyondlimits.phosphate_powder": "Phosphate Powder",
   "item.createbeyondlimits.superphosphate": "Superphosphate",
+  "item.createbeyondlimits.cheese_slice": "Cheese Slice",
+  "item.createbeyondlimits.blue_cheese_slice": "Blue Cheese Slice",
+  "item.createbeyondlimits.parmesan_slice": "Parmesan Slice",
 
 "Blocks": "MOD",
   "block.createbeyondlimits.aroma_speed_1": "Gustweave Aroma",
@@ -48,6 +51,10 @@
 
   "block.createbeyondlimits.reverie_altar": "Reverie Altar",
   "block.createbeyondlimits.phosphate_ore": "Phosphate Ore",
+
+  "block.createbeyondlimits.blue_cheese_block": "Blue Cheese Block",
+  "block.createbeyondlimits.cheese_block": "Cheese Block",
+  "block.createbeyondlimits.parmesan_cheese_block": "Parmesan Cheese Block",
 
   "Death.Message": "MOD",
   "death.attack.pressure_core": "%1$s got crisped by the heat of a Core",

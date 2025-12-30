@@ -2,6 +2,8 @@ package net.axell.createbeyondlimits.block;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.axell.createbeyondlimits.block.custom.AromaBlock;
+import net.axell.createbeyondlimits.block.custom.CheeseBlock;
+import net.axell.createbeyondlimits.block.custom.CheeseType;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -106,6 +108,33 @@ public class ModBlocks {
                     .strength(3.0f, 3.0f)
                     .mapColor(MapColor.COLOR_PURPLE)
                     .sound(SoundType.STONE)
+            ));
+
+    public static final RegistryObject<Block> BLUE_CHEESE_BLOCK = BLOCKS.register("blue_cheese_block",
+            () -> new CheeseBlock(
+                    Block.Properties.of()
+                            .strength(0.5f)
+                            .sound(SoundType.WOOL)
+                            .mapColor(MapColor.COLOR_BLUE),
+                    CheeseType.BLUE
+            ));
+
+    public static final RegistryObject<Block> CHEESE_BLOCK = BLOCKS.register("cheese_block",
+            () -> new CheeseBlock(
+                    Block.Properties.of()
+                            .strength(0.5f)
+                            .sound(SoundType.WOOL)
+                            .mapColor(MapColor.COLOR_ORANGE),
+                    CheeseType.NORMAL
+            ));
+
+    public static final RegistryObject<Block> PARMESAN_CHEESE_BLOCK = BLOCKS.register("parmesan_cheese_block",
+            () -> new CheeseBlock(
+                    Block.Properties.of()
+                            .strength(0.5f)
+                            .sound(SoundType.WOOL)
+                            .mapColor(MapColor.COLOR_YELLOW),
+                    CheeseType.PARMESAN
             ));
 
     public static void register(IEventBus modEventBus) {

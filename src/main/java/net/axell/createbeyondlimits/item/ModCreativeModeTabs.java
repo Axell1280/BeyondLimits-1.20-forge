@@ -29,12 +29,18 @@ public class ModCreativeModeTabs {
                        output.accept(ModBlocks.AROMA_REGEN_2.get().asItem());
                        output.accept(ModBlocks.AROMA_STRENGTH_1.get().asItem());
                        output.accept(ModBlocks.AROMA_STRENGTH_2.get().asItem());
+                       output.accept(ModBlocks.CHEESE_BLOCK.get().asItem());
+                       output.accept(ModBlocks.PARMESAN_CHEESE_BLOCK.get().asItem());
+                       output.accept(ModBlocks.BLUE_CHEESE_BLOCK.get().asItem());
                        output.accept(Moditems.TOTEM_REGEN.get().asItem());
                        output.accept(Moditems.TOTEM_STRENGTH.get().asItem());
                        output.accept(Moditems.TOTEM_SPEED.get().asItem());
                        output.accept(Moditems.PHOSPHATE_POWDER.get().asItem());
                        output.accept(Moditems.PHOSPHATE_ORE_ITEM.get().asItem());
                        output.accept(Moditems.SUPERPHOSPHATE.get().asItem());
+                       output.accept(Moditems.CHEESE_SLICE.get().asItem());
+                       output.accept(Moditems.BLUE_CHEESE_SLICE.get().asItem());
+                       output.accept(Moditems.PARMESAN_CHEESE_SLICE.get().asItem());
                     })
                     .build());
 

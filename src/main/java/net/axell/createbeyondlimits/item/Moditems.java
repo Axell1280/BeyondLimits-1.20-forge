@@ -2,14 +2,10 @@ package net.axell.createbeyondlimits.item;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.axell.createbeyondlimits.block.ModBlocks;
-import net.axell.createbeyondlimits.item.custom.NetherStarFragmentItem;
-import net.axell.createbeyondlimits.item.custom.PressureCoreItem;
-import net.axell.createbeyondlimits.item.custom.WingItem;
-import net.axell.createbeyondlimits.item.custom.RegenTotemItem;
-import net.axell.createbeyondlimits.item.custom.StrengthTotemItem;
-import net.axell.createbeyondlimits.item.custom.SpeedTotemItem;
-import net.axell.createbeyondlimits.item.custom.SuperphosphateItem;
-import net.axell.createbeyondlimits.sound.ModSounds;
+import net.axell.createbeyondlimits.block.custom.CheeseType;
+import net.axell.createbeyondlimits.item.custom.*;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +16,13 @@ public class Moditems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BeyondLimits.MOD_ID);
 
+    private static FoodProperties cheeseFood(int nutrition) {
+        return new FoodProperties.Builder()
+                .nutrition(nutrition)
+                .saturationMod(0.6f)
+                .alwaysEat()
+                .build();
+    }
     // Example normal items
     public static final RegistryObject<Item> NETHER_STAR_FRAGMENT = ITEMS.register("nether_star_fragment",
             () -> new NetherStarFragmentItem(new Item.Properties()
@@ -127,6 +130,33 @@ public class Moditems {
                     .stacksTo(64)
             ));
 
+    public static final RegistryObject<Item> BLUE_CHEESE_BLOCK_ITEM = ITEMS.register("blue_cheese_block",
+            () -> new BlockItem(ModBlocks.BLUE_CHEESE_BLOCK.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE_BLOCK_ITEM = ITEMS.register("cheese_block",
+            () -> new BlockItem(ModBlocks.CHEESE_BLOCK.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> PARMESAN_CHEESE_BLOCK_ITEM = ITEMS.register("parmesan_cheese_block",
+            () -> new BlockItem(ModBlocks.PARMESAN_CHEESE_BLOCK.get(),
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice",
+            () -> new CheeseSliceItem(new Item.Properties()
+                    .food(cheeseFood(6)),
+                    CheeseType.NORMAL
+            ));
+    public static final RegistryObject<Item> BLUE_CHEESE_SLICE = ITEMS.register("blue_cheese_slice",
+            () -> new CheeseSliceItem(new Item.Properties()
+                    .food(cheeseFood(8)),
+                    CheeseType.BLUE
+            ));
+    public static final RegistryObject<Item> PARMESAN_CHEESE_SLICE = ITEMS.register("parmesan_slice",
+            () -> new CheeseSliceItem(new Item.Properties()
+                    .food(cheeseFood(10)),
+                    CheeseType.PARMESAN
+            ));
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);
     }
