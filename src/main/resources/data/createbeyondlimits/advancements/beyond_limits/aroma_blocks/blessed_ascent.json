@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "createbeyondlimits:supercharged_aroma"
+    },
+    "title": {
+      "text": "Blessed Ascent",
+      "color": "dark_red",
+      "bold": false,
+      "italic": true
+    },
+    "description": {
+      "text": "Harness the power of a storm to supercharge an Aroma block.",
+      "color": "gold"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "createbeyondlimits:beyond_limits/aroma_blocks/aroma_strength",
+  "criteria": {
+    "code_trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

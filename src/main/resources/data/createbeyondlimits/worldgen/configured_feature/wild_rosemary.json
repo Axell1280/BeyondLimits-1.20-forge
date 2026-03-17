@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "tries": 64,
+    "xz_spread": 6,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "name": "createbeyondlimits:rosemary",
+              "properties": {
+                "age": "4"
+              }
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "component": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": [ "minecraft:grass_block", "minecraft:podzol", "minecraft:coarse_dirt" ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "feature": "createbeyondlimits:wild_rosemary",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 32
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:placed_on_ground_surface"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

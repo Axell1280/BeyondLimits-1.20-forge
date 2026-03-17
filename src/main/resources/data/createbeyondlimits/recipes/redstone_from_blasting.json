@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "processingTime": 100,
+  "ingredients": [
+    {
+      "item": "create:powdered_obsidian"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:redstone",
+      "count": 1
+    }
+  ]
+}
