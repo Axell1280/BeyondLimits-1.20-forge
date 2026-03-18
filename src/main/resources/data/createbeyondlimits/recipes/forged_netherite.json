@@ -40,10 +40,12 @@
   "results": [
     {
       "item": "minecraft:netherite_ingot",
+      "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Netherite\\\"}\"}}",
       "chance": 50
     },
     {
       "item": "minecraft:netherite_scrap",
+      "nbt": "{display:{Name:\"{\\\"text\\\":\\\"Forged Scrap\\\"}\"}}",
       "chance": 50
     }
   ],

@@ -11,8 +11,8 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "name": "createbeyondlimits:rosemary",
-              "properties": {
+              "Name": "createbeyondlimits:rosemary",
+              "Properties": {
                 "age": "4"
               }
             }
@@ -21,10 +21,14 @@
       },
       "placement": [
         {
-          "component": "minecraft:block_predicate_filter",
+          "type": "minecraft:block_predicate_filter",
           "predicate": {
             "type": "minecraft:matching_blocks",
-            "blocks": [ "minecraft:grass_block", "minecraft:podzol", "minecraft:coarse_dirt" ]
+            "blocks": [
+              "minecraft:grass_block",
+              "minecraft:podzol",
+              "minecraft:coarse_dirt"
+            ]
           }
         }
       ]

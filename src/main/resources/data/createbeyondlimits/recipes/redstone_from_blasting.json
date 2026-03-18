@@ -9,6 +9,7 @@
   "results": [
     {
       "item": "minecraft:redstone",
+      "nbt": "{\"display\":{\"Name\":\"{\\\"text\\\":\\\"Glazing redstone\\\",\\\"italic\\\":false}\"}}",
       "count": 1
     }
   ]

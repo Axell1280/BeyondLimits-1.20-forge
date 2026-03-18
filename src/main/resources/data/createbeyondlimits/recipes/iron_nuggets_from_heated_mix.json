@@ -20,8 +20,10 @@
   ],
   "results": [
     {
-      "item": "minecraft:iron_nugget",
-      "count": 3
+      "item": "minecraft:iron_ingot",
+      "nbt": "{display:{Name:'{\"text\":\"Extracted Iron\",\"italic\":false}'}}",
+      "count": 2,
+      "chance": 40
     },
     {
       "item": "minecraft:iron_nugget",

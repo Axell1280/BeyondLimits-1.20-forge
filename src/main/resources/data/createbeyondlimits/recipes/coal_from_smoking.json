@@ -9,6 +9,7 @@
   "results": [
     {
       "item": "minecraft:coal",
+      "nbt": "{display:{Name:'{\"text\":\"Toasted Coal\"}'}}",
       "count": 1
     }
   ]
