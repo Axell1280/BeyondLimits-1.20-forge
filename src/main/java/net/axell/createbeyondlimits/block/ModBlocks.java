@@ -6,6 +6,7 @@ import net.axell.createbeyondlimits.effect.ModEffects;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -43,7 +44,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.MOVEMENT_SPEED,
                     0,
-                    30
+                    16
             ));
 
     public static final RegistryObject<Block> AROMA_SPEED_2 = BLOCKS.register("aroma_speed_2",
@@ -57,7 +58,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.MOVEMENT_SPEED,
                     1,
-                    30
+                    32
             ));
 
     public static final RegistryObject<Block> AROMA_REGEN_1 = BLOCKS.register("aroma_regen_1",
@@ -71,7 +72,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.REGENERATION,
                     0,
-                    30
+                    16
             ));
 
     public static final RegistryObject<Block> AROMA_REGEN_2 = BLOCKS.register("aroma_regen_2",
@@ -85,7 +86,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.REGENERATION,
                     1,
-                    30
+                    32
             ));
 
     public static final RegistryObject<Block> AROMA_STRENGTH_1 = BLOCKS.register("aroma_strength_1",
@@ -99,7 +100,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.DAMAGE_BOOST,
                     0,
-                    30
+                    16
             ));
 
     public static final RegistryObject<Block> AROMA_STRENGTH_2 = BLOCKS.register("aroma_strength_2",
@@ -113,7 +114,7 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                             .sound(SoundType.AMETHYST_CLUSTER),
                     MobEffects.DAMAGE_BOOST,
                     1,
-                    30
+                    32
             ));
 
     public static final RegistryObject<Block> BLUE_CHEESE_BLOCK = BLOCKS.register("blue_cheese_block",
@@ -172,6 +173,59 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(4, 8)
 
+            ));
+
+    public static final RegistryObject<Block> BASE_FRAGRANCE = BLOCKS.register("fragrance",
+            () -> new Block(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_GRAY)
+                            .strength(1.5f, 3.0f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()
+                            .sound(SoundType.ANVIL)
+            ));
+
+    public static final RegistryObject<Block> FRAGRANCE_CINDER = BLOCKS.register("fragrance_cinder",
+            () -> new CinderFragranceBlock(
+                    Block.Properties.of()
+                            .mapColor(MapColor.NETHER)
+                            .strength(3.0f, 6.0f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()
+                            .lightLevel(state -> 8)
+                            .sound(SoundType.NETHERITE_BLOCK)
+            ));
+
+    public static final RegistryObject<Block> FRAGRANCE_MALICE = BLOCKS.register("fragrance_malice",
+            () -> new MaliceFragranceBlock(
+                    Block.Properties.of()
+                            .mapColor(MapColor.NETHER)
+                            .strength(3.0f, 6.0f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()
+                            .lightLevel(state -> 8)
+                            .sound(SoundType.NETHERITE_BLOCK)
+            ));
+
+    public static final RegistryObject<Block> FRAGRANCE_BASTION = BLOCKS.register("fragrance_bastion",
+            () -> new BastionFragranceBlock(
+                    Block.Properties.of()
+                            .mapColor(MapColor.NETHER)
+                            .strength(3.0f, 6.0f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()
+                            .lightLevel(state -> 8)
+                            .sound(SoundType.NETHERITE_BLOCK)
+            ));
+
+    public static final RegistryObject<Block> INTENSIFIED_ANCHOR = BLOCKS.register("intensified_anchor",
+            () -> new IntensifiedAnchorBlock(Block.Properties.of()
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .strength(5.0f, 12.0f)
+                    .noOcclusion()
+                    .isValidSpawn((state, getter, pos, type) -> false)
+                    .lightLevel(state -> 15) // Full brightness
+                    .sound(SoundType.NETHERITE_BLOCK)
             ));
 
     public static void register(IEventBus modEventBus) {

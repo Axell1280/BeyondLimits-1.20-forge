@@ -1,13 +1,12 @@
 package net.axell.createbeyondlimits.client;
 
+import net.axell.createbeyondlimits.block.entity.AromaBlockEntity;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
-import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
-import software.bernie.geckolib.model.data.EntityModelData;
 
 public class AromaRegenModel extends GeoModel<AromaBlockEntity> {
 

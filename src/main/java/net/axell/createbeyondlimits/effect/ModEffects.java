@@ -2,6 +2,7 @@ package net.axell.createbeyondlimits.effect;
 
 import net.axell.createbeyondlimits.BeyondLimits;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +16,8 @@ public class ModEffects {
     // This specifically registers our "Blessed" effect
     public static final RegistryObject<MobEffect> BLESSED = MOB_EFFECTS.register("blessed",
             BlessedEffect::new);
+    public static final RegistryObject<MobEffect> ENDUED = MOB_EFFECTS.register("endued",
+            () -> new EnduedEffect(MobEffectCategory.BENEFICIAL, 0x00FBFF));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
