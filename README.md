@@ -23,6 +23,8 @@
     </a>
     <a href="https://modrinth.com/mod/farmers-delight">
       <img src="https://img.shields.io/badge/Farmer's%20Delight-1.2+-8BC34A.svg" alt="Farmer's Delight Required"/>
+        <a href="https://modrinth.com/mod/create-beyond-limits">
+      <img src="https://img.shields.io/badge/-Modrinth-%2328A745?style=flat&logo=modrinth&logoColor=white" alt="Modrinth"/>
     </a>
   </p>
 </div>
