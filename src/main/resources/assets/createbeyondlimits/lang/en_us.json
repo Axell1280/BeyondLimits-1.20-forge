@@ -1,11 +1,34 @@
 {
+  "createbeyondlimits.ponder.cinder.header": "The Ember of the Nether",
+  "createbeyondlimits.ponder.cinder.text_1": "§6Soul Bound!§r Reach expanded to the entire Nether.",
+  "createbeyondlimits.ponder.cinder.text_2": "Active Effects:\n- Fire Resistance\n- Haste",
+  "createbeyondlimits.ponder.cinder.text_3": "§cConflict!§r You are already bound to another fragrance.",
+  "createbeyondlimits.ponder.cinder.text_4": "Interacting while bound deals §42 Damage§r as a warning.",
+  "createbeyondlimits.ponder.cinder.text_5": "Destroy the §eoriginal source§r to release your soul.",
+  "createbeyondlimits.ponder.cinder.text_6": "Your soul is free! New fragrance §abound§r.",
+  "createbeyondlimits.ponder.cinder.text_7": "This remains §clocked§r because you are now bound to the left.",
+
+  "createbeyondlimits.ponder.malice.header": "The Vigor of Hatred",
+  "createbeyondlimits.ponder.malice.text_1": "§6Soul Bound!§r Reach expanded to the entire Nether.",
+  "createbeyondlimits.ponder.malice.text_2": "Active Effects:\n- Strength\n- Increased Max Health",
+  "createbeyondlimits.ponder.malice.text_3": "§cConflict!§r Your soul is currently occupied elsewhere.",
+  "createbeyondlimits.ponder.malice.text_4": "Attempting to force a link deals §42 Damage§r.",
+  "createbeyondlimits.ponder.malice.text_5": "Break the §eold fragrance§r to reclaim your soul.",
+  "createbeyondlimits.ponder.malice.text_6": "Soul reclaimed and §abound§r to the new source.",
+  "createbeyondlimits.ponder.malice.text_7": "The conflict persists because you have a new active link.",
+
+  "createbeyondlimits.ponder.bastion.header": "The Shield of the Bastion",
+  "createbeyondlimits.ponder.bastion.text_1": "§6Soul Bound!§r Reach expanded to the entire Nether.",
+  "createbeyondlimits.ponder.bastion.text_2": "Active Effects:\n- Speed & Luck\n- Passive Piglins\n- Weaker Brute Attacks",
+  "createbeyondlimits.ponder.bastion.text_3": "§cConflict!§r You cannot bind to two fragrances at once.",
+  "createbeyondlimits.ponder.bastion.text_4": "New interactions will deal §42 Damage§r.",
+  "createbeyondlimits.ponder.bastion.text_5": "Destroy the §eactive source§r first.",
+  "createbeyondlimits.ponder.bastion.text_6": "Bastion fragrance successfully §abound§r.",
+  "createbeyondlimits.ponder.bastion.text_7": "Other sources will still §cwarn you§r while this is active.",
+
   "Icon": "MOD",
   "item.createbeyondlimits.beyond_limits": "Beyond Limits (DEBUG)",
-
-  "Tab": "MOD",
   "creativetab.beyond_limits_tab": "Beyond Limits",
-
-  "Items": "MOD",
   "item.createbeyondlimits.nether_star_fragment": "Nether Star Fragment",
   "item.createbeyondlimits.unstable_quartz": "Unstable Quartz",
   "item.createbeyondlimits.drained_nether_star_fragment": "Drained Nether Star Fragment",
@@ -41,34 +64,30 @@
   "item.createbeyondlimits.blue_cheese_slice": "Blue Cheese Slice",
   "item.createbeyondlimits.parmesan_slice": "Parmesan Slice",
   "item.createbeyondlimits.rosemary": "Rosemary",
-
-"Blocks": "MOD",
+  "item.createbeyondlimits.sheeted_base": "Fragrance Plate",
+  "item.createbeyondlimits.sheeted_pillar": "Fragrance Pillar",
+  "block.createbeyondlimits.fragrance": "Empty Fragrance Casing",
   "block.createbeyondlimits.supercharged_aroma": "Supercharged Sanctum",
-
   "block.createbeyondlimits.aroma_speed_1": "Gustweave Aroma",
   "block.createbeyondlimits.aroma_speed_2": "Galeheart Aroma",
-
   "block.createbeyondlimits.aroma_regen_1": "Bloomrest Aroma",
   "block.createbeyondlimits.aroma_regen_2": "Vernal Lifeburst Aroma",
-
   "block.createbeyondlimits.aroma_strength_1": "Ironpulse Aroma",
   "block.createbeyondlimits.aroma_strength_2": "Titanblood Aroma",
-
   "block.createbeyondlimits.reverie_altar": "Reverie Altar",
   "block.createbeyondlimits.phosphate_ore": "Phosphate Ore",
   "block.createbeyondlimits.deepslate_phosphate_ore": "Deepslate Phosphate Ore",
-
   "block.createbeyondlimits.blue_cheese_block": "Blue Cheese Block",
   "block.createbeyondlimits.cheese_block": "Cheese Block",
   "block.createbeyondlimits.parmesan_cheese_block": "Parmesan Cheese Block",
   "block.createbeyondlimits.domestic_sunflower": "Domesticated Sunflower",
   "block.createbeyondlimits.rosemary": "Rosemary Plant",
   "block.minecraft.sunflower": "Wild Sunflower",
-
+  "block.createbeyondlimits.fragrance_cinder": "Fragrance of Cinder",
+  "block.createbeyondlimits.fragrance_malice": "Fragrance of Malice",
+  "block.createbeyondlimits.fragrance_bastion": "Fragrance of Bastion",
+  "block.createbeyondlimits.intensified_anchor": "Intensified Anchor",
   "effect.createbeyondlimits.blessed": "Blessed",
-
-  "Death.Message": "MOD",
   "death.attack.pressure_core": "%1$s got crisped by the heat of a Core",
-  "death.attack.pressure_core.player": "%1$s got crisped by the heat of a Core While fighting %2$s"
-
+  "death.attack.pressure_core.player": "%1$s got crisped by the heat of a Core while fighting %2$s"
 }

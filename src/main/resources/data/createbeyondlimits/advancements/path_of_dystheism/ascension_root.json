@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "title": {
+      "text": "The Path of Ascension",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Rise above the dirt. Harness the essence of life and growth.",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "createbeyondlimits:path_of_dystheism/p_root",
+  "criteria": {
+    "has_regen_aroma": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createbeyondlimits:aroma_regen_1",
+              "createbeyondlimits:aroma_regen_2",
+              "createbeyondlimits:aroma_speed_1",
+              "createbeyondlimits:aroma_speed_2",
+              "createbeyondlimits:aroma_strength_1",
+              "createbeyondlimits:aroma_strength_2",
+              "createbeyondlimits:supercharged_aroma"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  }
+}

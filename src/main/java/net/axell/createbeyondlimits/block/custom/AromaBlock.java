@@ -1,9 +1,8 @@
 package net.axell.createbeyondlimits.block.custom;
 
-import net.axell.createbeyondlimits.client.AromaBlockEntity;
+import net.axell.createbeyondlimits.block.entity.AromaBlockEntity;
 import net.axell.createbeyondlimits.util.AromaRegistry;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.LivingEntity;
@@ -24,9 +23,9 @@ public class AromaBlock extends Block {
             Block.box(0D, 0D, 0D, 16D, 2D, 16D),
 
             // Middle: 14x14 and 7 units high (Y: 2 to 10)
-            Block.box(1D, 2D, 1D, 15D, 10D, 15D),
+            Block.box(1D, 2D, 1D, 15D, 12D, 15D),
 
-            // Top: 16x16 and 3 units high (Y: 10 to 14)
+            // Top: 16x16 and 3 units high (Y: 12 to 14)
             Block.box(0D, 10D, 0D, 16D, 14D, 16D)
     );
     private final MobEffect effect;

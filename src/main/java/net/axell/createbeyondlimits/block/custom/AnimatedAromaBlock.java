@@ -1,7 +1,7 @@
 package net.axell.createbeyondlimits.block.custom;
 
 import net.axell.createbeyondlimits.block.ModBlockEntities;
-import net.axell.createbeyondlimits.client.AromaBlockEntity;
+import net.axell.createbeyondlimits.block.entity.AromaBlockEntity;
 import net.axell.createbeyondlimits.effect.ModEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;
@@ -22,7 +22,7 @@ public class AnimatedAromaBlock extends AromaBlock implements EntityBlock {
     private final Supplier<MobEffect> effectSupplier;
 
     public AnimatedAromaBlock(Properties properties, Supplier<MobEffect> effectSupplier, int amplifier, int radius) {
-        super(properties, null, amplifier, radius); // Pass null to parent, we handle it here
+        super(properties, null, amplifier, radius);
         this.effectSupplier = effectSupplier;
     }
 
@@ -40,11 +40,17 @@ public class AnimatedAromaBlock extends AromaBlock implements EntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        // 1. Get the effect from the supplier lazily
         MobEffect currentEffect = effectSupplier.get();
 
-        if (currentEffect == ModEffects.BLESSED.get()) {
+        // 2. Compare using the RegistryObject itself, NOT .get()
+        // This is safer because RegistryObjects have stable identities
+        if (ModEffects.BLESSED.isPresent() && currentEffect == ModEffects.BLESSED.get()) {
             return new AromaBlockEntity(ModBlockEntities.SUPERCHARGED_AROMA_BE.get(), pos, state);
-        } else if (currentEffect == MobEffects.REGENERATION) {
+        }
+
+        // 3. For Vanilla effects, direct comparison is fine
+        if (currentEffect == MobEffects.REGENERATION) {
             return new AromaBlockEntity(ModBlockEntities.AROMA_REGEN.get(), pos, state);
         } else if (currentEffect == MobEffects.MOVEMENT_SPEED) {
             return new AromaBlockEntity(ModBlockEntities.AROMA_SPEED.get(), pos, state);

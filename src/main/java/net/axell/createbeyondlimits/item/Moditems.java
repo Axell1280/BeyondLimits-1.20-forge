@@ -109,6 +109,16 @@ public class Moditems {
                     .food(kernelFood())
             ));
 
+    public static final RegistryObject<Item> SHEETED_BASE = ITEMS.register("sheeted_base",
+            () -> new Item(new Item.Properties()
+            ));
+    public static final RegistryObject<Item> SHEETED_PILLAR = ITEMS.register("sheeted_pillar",
+            () -> new Item(new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> BASE_FRAGRANCE_ITEM = ITEMS.register("fragrance",
+            () -> new BlockItem(ModBlocks.BASE_FRAGRANCE.get(), new Item.Properties()));
+
     // --- Block Items ---
     public static final RegistryObject<Item> SUPERCHARGED_AROMA = ITEMS.register("supercharged_aroma",
             () -> new BlockItem(ModBlocks.SUPERCHARGED_AROMA_SANCTUM.get(),
@@ -192,6 +202,35 @@ public class Moditems {
                     .food(cheeseFood(10)),
                     CheeseType.PARMESAN
             ));
+
+    public static final RegistryObject<Item> FRAGRANCE_CINDER = ITEMS.register("fragrance_cinder",
+            () -> new BlockItem(ModBlocks.FRAGRANCE_CINDER.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.RARE)
+                            .fireResistant()
+            ));
+
+    public static final RegistryObject<Item> FRAGRANCE_MALICE = ITEMS.register("fragrance_malice",
+            () -> new BlockItem(ModBlocks.FRAGRANCE_MALICE.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.RARE)
+                            .fireResistant()
+            ));
+
+    public static final RegistryObject<Item> FRAGRANCE_BASTION = ITEMS.register("fragrance_bastion",
+            () -> new BlockItem(ModBlocks.FRAGRANCE_BASTION.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.RARE)
+                            .fireResistant()
+            ));
+
+    public static final RegistryObject<Item> INTENSIFIED_ANCHOR = ITEMS.register("intensified_anchor",
+            () -> new BlockItem(ModBlocks.INTENSIFIED_ANCHOR.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.EPIC)
+                            .fireResistant()
+            ));
+
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);
     }

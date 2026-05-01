@@ -30,6 +30,11 @@ public class ModSounds {
             registerSoundEvent("aroma_place");
     public static final RegistryObject<SoundEvent> AROMA_BREAK =
             registerSoundEvent("aroma_break");
+    public static final RegistryObject<SoundEvent> AROMA_CORE =
+            registerSoundEvent("aroma_core");
+    public static RegistryObject<SoundEvent> AROMA_AMBIENT =
+            registerSoundEvent("aroma_ambient");
+
 
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
