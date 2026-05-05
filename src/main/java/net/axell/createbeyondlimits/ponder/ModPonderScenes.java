@@ -11,6 +11,73 @@ import net.minecraft.world.phys.Vec3;
 
 public class ModPonderScenes {
 
+    public static void anchorRitualScene(SceneBuilder scene, SceneBuildingUtil util) {
+        scene.title("anchor_ritual", "The Intensified Anchor Ritual");
+        scene.configureBasePlate(0, 0, 9);
+
+        BlockPos anchorPos = new BlockPos(4, 1, 4); // Center of your NBT
+        // The 3x3 Soul Fire Ring from your NBT
+        Selection fireRing = util.select().fromTo(3, 1, 3, 5, 1, 5).substract(util.select().position(anchorPos));
+
+        // 1. Show Base and Anchor
+        scene.addKeyframe();
+        scene.world().showSection(util.select().layer(0), Direction.UP);
+        scene.idle(10);
+        scene.world().showSection(util.select().position(anchorPos), Direction.DOWN);
+        scene.idle(15);
+        scene.overlay().showText(20).text("Place the Anchor at the center of your platform.")
+                .pointAt(util.vector().blockSurface(anchorPos, Direction.UP));
+        scene.idle(20);
+
+        // 2. Show the Fire Ring
+        scene.addKeyframe();
+        scene.world().showSection(fireRing, Direction.DOWN);
+        scene.overlay().showText(60).text("Surround it with a ring of Soul Fire.")
+                .pointAt(util.vector().blockSurface(new BlockPos(3, 1, 4), Direction.UP));
+        scene.idle(70);
+
+        // 3. Highlight the Fragrance Corners (from your NBT)
+        BlockPos corner1 = new BlockPos(2, 1, 2); // Bastion
+        BlockPos corner2 = new BlockPos(6, 1, 6); // Malice
+        BlockPos corner3 = new BlockPos(2, 1, 6);
+        BlockPos corner4 = new BlockPos(6, 1, 2);
+
+        scene.addKeyframe();
+        scene.world().showSection(util.select().position(corner1).add(util.select().position(corner2).add(util.select().position(corner3).add(util.select().position(corner4)))), Direction.DOWN);
+
+        scene.overlay().showOutline(PonderPalette.BLUE, corner1, util.select().position(corner1), 60);
+        scene.overlay().showOutline(PonderPalette.BLUE, corner2, util.select().position(corner2), 60);
+        scene.overlay().showOutline(PonderPalette.GREEN, corner3, util.select().position(corner3), 60);
+        scene.overlay().showOutline(PonderPalette.GREEN, corner4, util.select().position(corner4), 60);
+        scene.overlay().showText(30).text("Place two different Fragrances in opposite corners.")
+                .colored(PonderPalette.BLUE).pointAt(util.vector().blockSurface(corner1, Direction.UP));
+        scene.overlay().showText(30).text("Place Empty Fragrance Casings in the other opposite corners.")
+                        .colored(PonderPalette.GREEN).pointAt(util.vector().blockSurface(corner4, Direction.UP));
+        scene.idle(70);
+
+        // 4. Show the Activation and Danger Zone
+        scene.addKeyframe();
+        scene.overlay().showText(30).text("Right-click to start. The ritual lasts 5 minutes.")
+                .colored(PonderPalette.RED).pointAt(util.vector().blockSurface(anchorPos, Direction.UP));
+
+        scene.idle(40);
+        scene.overlay().showText(60).text("Warning: The surrounding zone will repel entities and apply Wither.")
+                .independent(40);
+
+        scene.idle(60);
+
+        scene.addKeyframe();
+        scene.overlay().showOutline(PonderPalette.RED, anchorPos, util.select().position(anchorPos), 120);
+        scene.overlay().showText(40).text("The anchor will turn into an Intensified Anchor" )
+                .colored(PonderPalette.RED).pointAt(util.vector().blockSurface(anchorPos, Direction.DOWN));
+        scene.idle(40);
+
+        scene.addKeyframe();
+        scene.overlay().showText(40).text("The Effects of the Intensified Anchor:\n- Resistance II\n- Regeneration II\n- Ghast Passivity\n- Wither Immunity" )
+                .colored(PonderPalette.WHITE).pointAt(util.vector().blockSurface(anchorPos, Direction.UP));
+        scene.idle(40);
+    }
+
     public static void cinderScene(SceneBuilder scene, SceneBuildingUtil util) {
         scene.title("cinder", "The Ember of the Nether");
         scene.configureBasePlate(0, 0, 9);

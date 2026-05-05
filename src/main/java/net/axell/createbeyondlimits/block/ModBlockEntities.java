@@ -36,6 +36,10 @@ public class ModBlockEntities {
                     () -> BlockEntityType.Builder.of(IntensifiedAnchorBlockEntity::new,
                             ModBlocks.INTENSIFIED_ANCHOR.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<AnchorBlockEntity>> ANCHOR_BE =
+            BLOCK_ENTITIES.register("anchor_be", () ->
+                    BlockEntityType.Builder.of(AnchorBlockEntity::new, ModBlocks.ANCHOR.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

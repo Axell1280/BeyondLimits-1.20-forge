@@ -4,7 +4,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 
-public class BeyondLimitsConfig {
+public class ModConfigs {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
 
@@ -14,6 +14,10 @@ public class BeyondLimitsConfig {
 
     // Fragrance Category
     public static final ForgeConfigSpec.ConfigValue<Integer> FRAGRANCE_REBIND_DAMAGE;
+
+    // Ritual Category
+    public static final ForgeConfigSpec.ConfigValue<Integer> RITUAL_PARTICLE_MULTIPLIER;
+    public static final ForgeConfigSpec.ConfigValue<Integer> RITUAL_DURATION_TICKS;
 
     static {
         // --- ANIMAL MECHANICS ---
@@ -35,6 +39,21 @@ public class BeyondLimitsConfig {
         FRAGRANCE_REBIND_DAMAGE = BUILDER
                 .comment("The amount of damage (in half-hearts) dealt when trying to bind to a new fragrance while already bound.")
                 .defineInRange("rebindDamage", 2, 0, 20);
+
+        BUILDER.pop();
+
+        // --- RITUAL SETTINGS ---
+        BUILDER.push("Anchor Ritual");
+
+        RITUAL_PARTICLE_MULTIPLIER = BUILDER
+                .comment("Multiplies the amount of particles in the Anchor ritual. Default is 1.",
+                        "Increase this if your PC can handle it, or decrease it if you experience lag.")
+                .defineInRange("particleMultiplier", 1, 1, 20); // Max 20x particles
+
+        RITUAL_DURATION_TICKS = BUILDER
+                .comment("The total length of the ritual in ticks (20 ticks = 1 second).",
+                        "Default is 6000 (5 minutes).")
+                .defineInRange("ritualDurationTicks", 6000, 1200, 72000); // Min 1 min, Max 1 hour
 
         BUILDER.pop();
 

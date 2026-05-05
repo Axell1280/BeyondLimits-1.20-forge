@@ -20,7 +20,7 @@ public class CinderFragranceBlockEntity extends BlockEntity implements IHaveGogg
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tooltip, boolean isPlayerSneaking) {
-        tooltip.add(Component.literal("    ").append(Component.literal("§6Fragrance: Cinder")));
+        tooltip.add(Component.literal("    ").append(Component.literal("§bFragrance: §6Cinder")));
         if (this.getPersistentData().getBoolean("SoulBound")) {
             tooltip.add(Component.literal("§7Status: §aSoul Bound"));
             tooltip.add(Component.literal("§7Active Effects:"));

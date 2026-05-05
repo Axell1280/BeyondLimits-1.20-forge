@@ -175,8 +175,18 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
 
             ));
 
+    public static final RegistryObject<Block> ANCHOR = BLOCKS.register("anchor",
+            () -> new AnchorBlock(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_GRAY)
+                            .strength(1.5f,3.0f)
+                            .requiresCorrectToolForDrops()
+                            .noOcclusion()
+                            .sound(SoundType.ANVIL)
+            ));
+
     public static final RegistryObject<Block> BASE_FRAGRANCE = BLOCKS.register("fragrance",
-            () -> new Block(
+            () -> new FragranceBlock(
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.COLOR_GRAY)
                             .strength(1.5f, 3.0f)
@@ -221,8 +231,9 @@ public static final RegistryObject<Block> AROMA_SPEED_1 = BLOCKS.register("aroma
     public static final RegistryObject<Block> INTENSIFIED_ANCHOR = BLOCKS.register("intensified_anchor",
             () -> new IntensifiedAnchorBlock(Block.Properties.of()
                     .mapColor(MapColor.COLOR_PURPLE)
-                    .strength(5.0f, 12.0f)
+                    .strength(1000.0f, 12.0f)
                     .noOcclusion()
+                    .dynamicShape()
                     .isValidSpawn((state, getter, pos, type) -> false)
                     .lightLevel(state -> 15) // Full brightness
                     .sound(SoundType.NETHERITE_BLOCK)

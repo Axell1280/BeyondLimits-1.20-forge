@@ -20,11 +20,12 @@ public class MaliceFragranceBlockEntity extends BlockEntity implements IHaveGogg
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tooltip, boolean isPlayerSneaking) {
-        tooltip.add(Component.literal("    ").append(Component.literal("§bFragrance: Malice")));
+        tooltip.add(Component.literal("    ").append(Component.literal("§bFragrance: §cMalice")));
         if (this.getPersistentData().getBoolean("SoulBound")) {
             tooltip.add(Component.literal("§7Status: §aSoul Bound"));
             tooltip.add(Component.literal("§7Active Effects:"));
-            tooltip.add(Component.literal(" §5- Strength I"));
+            tooltip.add(Component.literal(" §9- Strength I"));
+            tooltip.add(Component.literal(" §4- +4 Hearts"));
         } else {
             tooltip.add(Component.literal("§7Status: §6Unclaimed"));
         }

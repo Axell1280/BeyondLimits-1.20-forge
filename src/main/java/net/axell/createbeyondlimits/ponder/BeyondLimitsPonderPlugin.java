@@ -20,6 +20,8 @@ public class BeyondLimitsPonderPlugin implements PonderPlugin {
         ResourceLocation bastionId = ForgeRegistries.ITEMS.getKey(ModBlocks.FRAGRANCE_BASTION.get().asItem());
         ResourceLocation maliceId = ForgeRegistries.ITEMS.getKey(ModBlocks.FRAGRANCE_MALICE.get().asItem());
         ResourceLocation cinderId = ForgeRegistries.ITEMS.getKey(ModBlocks.FRAGRANCE_CINDER.get().asItem());
+        ResourceLocation anchorId = ForgeRegistries.ITEMS.getKey(ModBlocks.ANCHOR.get().asItem());
+
 
         // This links the item to your storyboard method
         helper.forComponents(bastionId)
@@ -38,6 +40,12 @@ public class BeyondLimitsPonderPlugin implements PonderPlugin {
                 .addStoryBoard(
                         ResourceLocation.fromNamespaceAndPath("createbeyondlimits", "cinder"),
                         ModPonderScenes::cinderScene
+                );
+
+        helper.forComponents(anchorId)
+                .addStoryBoard(
+                        ResourceLocation.fromNamespaceAndPath("createbeyondlimits", "int_anch"),
+                        ModPonderScenes::anchorRitualScene
                 );
     }
 

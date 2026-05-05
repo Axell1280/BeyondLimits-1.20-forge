@@ -20,14 +20,14 @@ public class BastionFragranceBlockEntity extends BlockEntity implements IHaveGog
 
     @Override
     public boolean addToGoggleTooltip(List<Component> tooltip, boolean isPlayerSneaking) {
-        tooltip.add(Component.literal("    ").append(Component.literal("§eFragrance: Bastion")));
+        tooltip.add(Component.literal("    ").append(Component.literal("§bFragrance: §eBastion")));
         if (this.getPersistentData().getBoolean("SoulBound")) {
             tooltip.add(Component.literal("§7Status: §aSoul Bound"));
             tooltip.add(Component.literal("§7Active Effects:"));
-            tooltip.add(Component.literal(" §f- Speed II"));
-            tooltip.add(Component.literal(" §d- Luck"));
+            tooltip.add(Component.literal(" §3- Speed II"));
+            tooltip.add(Component.literal(" §2- Luck"));
             tooltip.add(Component.literal(" §6- Piglin Passivity"));
-            tooltip.add(Component.literal(" §c- Weaker Brute Attacks"));
+            tooltip.add(Component.literal(" §6- Weaker Brute Attacks"));
         } else {
             tooltip.add(Component.literal("§7Status: §6Unclaimed"));
         }

@@ -119,6 +119,9 @@ public class Moditems {
     public static final RegistryObject<Item> BASE_FRAGRANCE_ITEM = ITEMS.register("fragrance",
             () -> new BlockItem(ModBlocks.BASE_FRAGRANCE.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> ANCHOR_ITEM = ITEMS.register("anchor",
+            () -> new BlockItem(ModBlocks.ANCHOR.get(), new Item.Properties()));
+
     // --- Block Items ---
     public static final RegistryObject<Item> SUPERCHARGED_AROMA = ITEMS.register("supercharged_aroma",
             () -> new BlockItem(ModBlocks.SUPERCHARGED_AROMA_SANCTUM.get(),

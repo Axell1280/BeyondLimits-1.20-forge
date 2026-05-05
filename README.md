@@ -1,124 +1,135 @@
-<div align="center">
-  <h1>Create: Beyond Limits</h1>
+# Create: Beyond Limits
 
+<p align="center">
   <a href="https://beyond-limits.fandom.com/wiki/Beyond_Limits_Wiki">
-    <img src="https://i.imgur.com/u1NPeKE.png" width="250" alt="Wiki"/>
+    <img src="https://i.imgur.com/u1NPeKE.png" width="260" alt="Wiki"/>
   </a>
+</p>
 
-  <p>
-    <a href="LICENSE.md">
-      <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"/>
-    </a>
-    <a href="https://files.minecraftforge.net/">
-      <img src="https://img.shields.io/badge/Mod%20Loader-Forge-orange.svg" alt="Forge"/>
-    </a>
-    <a href="https://minecraft.wiki/w/Java_Edition_1.20.1">
-      <img src="https://img.shields.io/badge/Minecraft-1.20.1-brightgreen.svg" alt="Minecraft 1.20.1"/>
-    </a>
-    <a href="https://modrinth.com/mod/geckolib">
-      <img src="https://img.shields.io/badge/Dependency-GeckoLib%204.4.7-blue.svg" alt="GeckoLib Required"/>
-    </a>
-    <a href="https://modrinth.com/mod/create">
-      <img src="https://img.shields.io/badge/Create-0.6.0.6+-blueviolet.svg" alt="Create Compatible"/>
-    </a>
-    <a href="https://modrinth.com/mod/farmers-delight">
-      <img src="https://img.shields.io/badge/Farmer's%20Delight-1.2+-8BC34A.svg" alt="Farmer's Delight Required"/>
-    </a>
-    <a href="https://modrinth.com/mod/create-beyond-limits">
-      <img src="https://img.shields.io/badge/-Modrinth-%2328A745?style=flat&logo=modrinth&logoColor=white" alt="Modrinth"/>
-    </a>
-  </p>
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Forge-Compatible-orange?style=for-the-badge&logo=curseforge" />
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Create-0.6.0.6+-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GeckoLib-4.4.7-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Farmer's%20Delight-Required-8BC34A?style=for-the-badge" />
+</p>
 
-An addon for the Create mod that introduces new recipes, animated independent blocks, crops, and crafting components, designed to expand Create’s automation systems and progression depth.
+<p align="center">
+  <a href="https://modrinth.com/mod/create-beyond-limits">
+    <img src="https://img.shields.io/badge/Modrinth-Page-00AF5C?style=for-the-badge&logo=modrinth&logoColor=white" />
+  </a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/create-beyondlimits">
+    <img src="https://img.shields.io/badge/CurseForge-Download-F16436?style=for-the-badge&logo=curseforge&logoColor=white" />
+  </a>
+  <a href="https://discord.gg/9v8mYEv5p">
+    <img src="https://img.shields.io/badge/Discord-Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+</p>
+
+---
+
+## Overview
+
+**Create: Beyond Limits** expands the Create mod with structured progression systems, animated machinery, and layered world interaction mechanics.
+
+It does not replace Create — it evolves it.
+
+This mod focuses on long-term progression, structured automation logic, and immersive mechanical systems that reward planning and experimentation.
+
+---
+
+## Core Vision
+
+A world where automation evolves beyond simple machinery:
+
+- Systems grow through progression layers rather than instant unlocks
+- Machines gain identity through upgrades and animation-driven feedback
+- Resources become part of structured dependency chains
+- Player interaction influences long-term system evolution
 
 ---
 
 ## Development Status
 
-<details>
-<summary>Important information</summary>
+### v0.8.0 — Descension: Manifestation
 
-- **v0.5.5 Ascension Update:** The mod has entered a stable milestone phase.
-- Core systems, blocks, and recipes have been **polished and unified**.
-- All Aroma-related blocks have been overhauled with **GeckoLib animations**.
-- Version **1.0.0** is planned as the full release.
+A major stabilization, expansion, and system completion milestone.
 
-</details>
-
----
-
-## <img src="https://i.imgur.com/8X17XkO.png" width="35"/> Key Features
-
-* **Supercharged Sanctums:** Harness lightning to evolve your Aroma blocks into legendary animated beacons with a 64-block "Blessed" radius.
-* **New Flora:** Discover and cultivate **Rosemary**, a hardy crop found in Old Growth Taigas and Mountains.
-* **Progressive Automation:** Process Phosphate and master the Sunflower farming loop to create high-tier fertilizers and buffs.
-* **Independent Systems:** High-fidelity blocks and Sub-Totems that expand the game without modifying Create’s internal mechanics.
+- Introduces the **Intensified Anchor** and full ritual progression system
+- Fragrance systems fully integrated into survival and progression gameplay
+- In-game **Ponder integration** added for guided system learning
+- Core mechanics refined and stabilized for long-term progression
+- Foundation prepared for the upcoming **1.0.0 release branch**
 
 ---
 
-## <img src="https://i.imgur.com/LOjYM76.png" width="40"/> Version Requirements
+## Key Systems
 
-> **Note:** This mod strictly targets the following Create versions to ensure stability.
-
-**Supported Create Versions:** `0.6.0.6` — `0.6.0.8`
-
-Always check your version before launching to avoid registry errors.
+### Intensified Anchor System
+A structured ritual progression system where Anchors evolve through controlled transformation mechanics, unlocking deeper gameplay layers.
 
 ---
 
-## <img src="https://i.imgur.com/BnAl2YO.png" width="30"/> Installation Requirements
-
-<table>
-<tr>
-<td align="center">
-
-<a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html">
-  <img src="https://i.imgur.com/KAgud6s.png" alt="Minecraft Forge" width="220"/>
-</a>
-
-<br><strong>Mod Loader</strong><br>
-Forge (Minecraft 1.20.1)
-
-</td>
-<td align="center">
-
-<a href="https://modrinth.com/mod/geckolib">
-  <img src="https://i.imgur.com/Es0Lyy6.png" alt="GeckoLib" width="220"/>
-</a>
-
-<br><strong>Required Dependency</strong><br>
-GeckoLib <strong>4.4.7+</strong>
-
-</td>
-<td align="center">
-
-<a href="https://modrinth.com/mod/create">
-  <img src="https://i.imgur.com/YLCftaQ.png" alt="Create Mod" width="220"/>
-</a>
-
-<br><strong>Required Dependency</strong><br>
-Create <strong>0.6.0.6 +</strong>
-
-</td>
-<td align="center">
-
-<a href="https://modrinth.com/mod/farmers-delight">
-  <img src="https://i.imgur.com/wqSocVR.png" alt="Farmer's Delight" width="500"/>
-</a>
-
-<br><strong>Required Dependency</strong><br>
-Farmer's Delight <strong>1.2 +</strong>
-
-</td>
-</tr>
-</table>
+### Fragrance & Soul Mechanics
+Harness **Bastion**, **Cinder**, and **Malice** Fragrances to bind environmental and progression-based effects to the player.
 
 ---
 
-## <img src="https://i.imgur.com/76DcmBk.png" width="50"/> Notes
+### Guided Progression (Ponder Integration)
+Complex systems are explained through in-game visual progression scenes for improved learning and onboarding.
 
-- This mod is **not affiliated** with the Create mod developers.
-- Compatibility with Create applies primarily to **recipes and processing loops**.
-- **Farmer’s Delight** is required for full crop integration and culinary recipes.
-- Performance has been optimized for version 0.5.5+ to support complex animated block clusters.
+---
+
+### Natural Automation
+Enable autonomous animal breeding through gamerules, allowing long-term self-sustaining farm systems.
+
+---
+
+### Flora Expansion
+Introduce and cultivate **Rosemary**, a biome-linked crop integrated into progression chains and crafting systems.
+
+---
+
+### Animated World Blocks
+High-fidelity GeckoLib-powered animated blocks designed to blend into Create’s visual style while extending immersion.
+
+---
+
+### Independent Mechanics
+Systems designed to extend gameplay depth without modifying Create’s internal engine logic.
+
+---
+
+## Compatibility
+
+This mod is tightly version-controlled for stability.
+
+- Minecraft: **1.20.1**
+- Create: **0.6.0.6 — 0.6.0.8**
+- Forge Required
+- GeckoLib Required
+- Farmer’s Delight Required
+
+---
+
+## Project Links
+
+- Modrinth: https://modrinth.com/mod/create-beyond-limits
+- CurseForge: https://www.curseforge.com/minecraft/mc-mods/create-beyondlimits
+- Discord: https://discord.gg/9v8mYEv5p
+- Wiki: https://beyond-limits.fandom.com/wiki/Beyond_Limits_Wiki
+
+---
+
+## Notes
+
+- Not affiliated with the Create mod developers
+- Designed for compatibility with Create systems (no overrides)
+- Focused on expansion through structured mechanics, not replacement
+- Built for long-term progression scaling and stability
+
+---
+
+## Project Philosophy
+
+> “Automation is not the end goal — evolution of systems is.”

@@ -7,20 +7,16 @@ import net.axell.createbeyondlimits.client.AromaRegenModel;
 import net.axell.createbeyondlimits.client.AromaSpeedModel;
 import net.axell.createbeyondlimits.client.AromaStrengthModel;
 import net.axell.createbeyondlimits.client.AromaSuperchargedModel;
-import net.axell.createbeyondlimits.config.BeyondLimitsConfig;
+import net.axell.createbeyondlimits.config.ModConfigs;
 import net.axell.createbeyondlimits.effect.ModEffects;
 import net.axell.createbeyondlimits.item.ModCreativeModeTabs;
 import net.axell.createbeyondlimits.item.Moditems;
 import net.axell.createbeyondlimits.networking.ModNetworking;
 import net.axell.createbeyondlimits.ponder.BeyondLimitsPonderPlugin;
-import net.axell.createbeyondlimits.ponder.ModPonderScenes;
 import net.axell.createbeyondlimits.sound.ModSounds;
-import net.createmod.ponder.Ponder;
-import net.createmod.ponder.api.registration.PonderSceneRegistrationHelper;
 import net.createmod.ponder.foundation.PonderIndex;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.GameRules;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -33,11 +29,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.loading.FMLEnvironment;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import software.bernie.geckolib.renderer.GeoBlockRenderer;
-import net.axell.createbeyondlimits.event.ModEvents;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(BeyondLimits.MOD_ID)
@@ -67,7 +60,7 @@ public class BeyondLimits {
 
         ModSounds.register(modEventBus);
 
-        BeyondLimitsConfig.register();
+        ModConfigs.register();
 
         modEventBus.addListener(this::commonSetup);
         
