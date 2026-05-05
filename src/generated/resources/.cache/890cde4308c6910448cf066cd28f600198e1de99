@@ -1,0 +1,6 @@
+// 1.20.1	2026-05-04T18:08:15.4552663	Tags for minecraft:block mod id createbeyondlimits
+742bc5e90c713bfdc6ec613e857f6227423bbea5 data/create/tags/blocks/wrench_pickup.json
+d1b031264ee4b3802645fff7f7e3f5df37df8adb data/minecraft/tags/blocks/mineable/pickaxe.json
+b61ada72152fb1324447b5b1d3bb57fc85387a9e data/minecraft/tags/blocks/needs_diamond_tool.json
+7d907338cc6b732a437163abbdf375ab8e641f85 data/minecraft/tags/blocks/needs_iron_tool.json
+d24c19c89dfe0059a885eb4ec99faa954ae8810c data/minecraft/tags/blocks/needs_stone_tool.json
